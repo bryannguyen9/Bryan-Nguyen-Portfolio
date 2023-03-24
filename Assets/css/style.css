@@ -1,0 +1,62 @@
+/* TODO: Label selector type */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+/* TODO: Label selector type */
+body {
+  background-color: lemonchiffon;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #f0ead6;
+  background-color: #191970;
+}
+
+header img {
+    width: 100px;
+    background-color: #f0ead6;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 20px;
+  
+}
+
+header h1 {
+  font-weight: bolder;
+  font-size: 24px;
+  position: absolute;
+  color: black;
+  left: 125px;
+  top: -5px;
+
+}
+
+#section icon {
+  width: 100px;
+    background-color: #f0ead6;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+figure {
+  width: 200px;
+  background-color: #f0ead6;
+}
+
+/* TODO: Label selector type */
+.highlighted-text {
+  font-weight: bolder;
+}
+
+/* TODO: Label selector type */
+#contact-section {
+  background-color: #f0ead6;
+}
