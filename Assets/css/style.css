@@ -31,6 +31,12 @@ footer {
   
 }
 
+footer p {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+
 header img {
     width: 90px;
     height: 86px;
@@ -62,8 +68,8 @@ header nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   position: absolute;
-  top: -35%;
-  right: 38%;
+  top: -40%;
+  right: 34%;
   
   
 }
@@ -80,15 +86,13 @@ header nav ul li {
   
 }
 
-a {
+header li a {
   color: whitesmoke;
   text-decoration: none;
-}
-
-
-
-main + section {
-  position: abs
+  padding-block: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
   
 }
 
@@ -193,6 +197,13 @@ flex-direction: column;
   top: 250px;
   left: 305px;
 }
+
+#portfolio-content h4 {
+  font-weight:bolder;
+  position: absolute;
+  top: 500px;
+  left: 305px;
+}
 #portfolio-content p {
   position: absolute;
   top: 300px;
@@ -249,22 +260,18 @@ flex-direction: column;
 #contact-me-content nav ul li {
   color: black;
   list-style-type: none;
+  
 }
 
-#contact-me-content li:hover {
+#contact-me-content li span:hover {
   text-decoration: underline;
   text-decoration-color: black;
 }
-#contact-me-content li:hover {
-  text-decoration: underline;
-  text-decoration-color: black;
-}
-/* TODO: Label selector type */
+
 #contact-section {
   position: absolute;
 }
 
-/*implement target displays and hover menu items*/
 header nav a:hover {
   background-color: lightgray;
   color: black;
