@@ -36,6 +36,11 @@ WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
 
 [//] # "TO DO:"
+ADD DEFAULT PAGE
+ADD TO PORTFOLIO
+MAIN PORTFOLIO IMAGE LARGER AND WHEN CLICKED ON EACH INDIVIDUAL PICTURE SENDS TO LIVE PORTFOLIO LINK
+FLEX TO FIT DIFFERENT SCREEN SIZES AND DEVICES
+
 WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications

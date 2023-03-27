@@ -13,8 +13,8 @@
       <img src="./Assets/images/myicon.png" alt="Company Icon" />
       <h1>Bryan Nguyen Portfolio Site</h1>
         <nav>
-          <ul>
-              <li>
+          <ul class = "asideMain">
+              <li>  
                   <a href="#about-me-content">about me</a>
               </li>
               <li>
@@ -27,6 +27,23 @@
                   <a href="#contact-me-content">contact me</a>
               </li>
           </ul>
+          <aside>
+            <ul class = "asideSmall">
+              <li>  
+                  <a href="#about-me-content">about me</a>
+              </li>
+              <li>
+                  <a href="#links-content">links</a>
+              </li>
+              <li>
+                  <a href="#portfolio-content">portfolio</a>
+              </li>
+              <li>
+                  <a href="#contact-me-content">contact me</a>
+              </li>
+          </ul>
+          </aside>  
+          
         </nav>
       
       
@@ -79,29 +96,48 @@
       </section>
 
       <section id="portfolio-content" >
-       
-          <h2>portfolio</h2>
-            <h3> Horiseon Landing Page</h3>
+      
+        <h2>portfolio</h2>
+          <figure class = "portfolio" id="portfolio-card">          
+                <h3> Horiseon Landing Page</h3>
+                  <p> 
+                    This is one of my first projects where I refactored code in order <br>
+                    to make the website compliant with current accessibility terms and <br>
+                    conditions. I cleaned up code behind the scenes and added semantic <br>
+                    HTML elements in order to make the overall website more accessible. <br>
+                  
+                  </p>
+                <figure class="flex-img">
+                  <a href="https://bryannguyen9.github.io/3-20-23-challenge/"><img src="./Assets/images/horiseonproject1.png" alt="Screenshot of my most recent projects"/></a>
+                </figure>
+          </figure>
+          
+          <figure class = "portfolio" id="portfolio-card">
+            <h3>My First Landing Page</h3>
               <p> 
-                This is one of my first projects where I refactored code in order <br>
-                to make the website compliant with current accessibility terms and <br>
-                conditions. I cleaned up code behind the scenes and added semantic <br>
-                HTML elements in order to make the overall website more accessible. <br>
-                <br>
-                This was a great introduction into the world of HTML and CSS, and <br>
-                a great way to find the best and most efficient ways to use HTML<br>
-                and CSS individually and how they cooperate with each other to create<br>
-                a website.<br>
-                <br>
-                <br>
-                <h4>More Coming Soon!</h4>
+                This is one of my first landing pages that I created for myself. <br>
+                I used HTML and CSS to create this simple landing page that also <br>
+                incorporates a input and send button for those who wish to contact <br>
+                me. 
               </p>
             <figure class="flex-img">
-              <img src="./Assets/images/horiseonproject1.png" alt="Screenshot of my most recent project"/>
+              <a href="https://bryannguyen9.github.io/mini-project-01/"><img src="./Assets/images/firstlandingpage.png" alt="Screenshot of my most recent projects"/></a>
             </figure>
+          </figure>
+
+          <figure class = "portfolio" id="portfolio-card">
+            <h3>CSS Code Snippet Cheatsheet</h3>
+              <p> 
+                This is a website I created in order to implement different CSS <br>
+                code that use different style forms and code examples in order <br>
+                to better highlight use forms and cases all in one neat sheet. 
+              </p>
             <figure class="flex-img">
-              <img src="./Assets/images/horiseonproject2.png" alt="Screenshot of my most recent project"/>
+              <a href="https://bryannguyen9.github.io/CSS-Snippet-Cheatsheet/"><img src="./Assets/images/csssnipsheet.png" alt="Screenshot of my most recent projects"/></a>
             </figure>
+          </figure>
+            <br> <br> <br> <br> <br> <br>
+           
       </section>
 
       <section id="contact-me-content" >
