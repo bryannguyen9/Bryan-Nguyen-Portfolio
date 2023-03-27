@@ -149,30 +149,54 @@ section:target {
   color: black;
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 10px;
+}
+#links-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 30%;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: 40%;  
+}
+
+.links:hover {
+  transform: scale(1.2);
+  -webkit-transition: transform 0.5s ease-in-out;
+
+}
+
 #links-content h2 {
+  font-weight: bold;
   position: absolute;
   top: 200px;
   left: 450px;
 }
 
-#links-content h3 {
-  font-weight: lighter;
-  position: absolute;
-  top: 250px;
-  left: 305px;
-}
-
-#links-content a{
+#links-card li a{
   color: black;
 }
-#links-content nav ul li {
+#links-card li {
   color: black;
   list-style-type: none;
 }
 
-#links-content li:hover {
+#links-card li a:hover {
   text-decoration: underline;
   text-decoration-color: black;
+}
+
+#links-card img {
+  max-width: 20%;
 }
 
 /* TODO: Label selector type */
@@ -194,8 +218,8 @@ section:target {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  top: 200px;
-  left: 450px;
+  top: 350px;
+  left: 400px;
 }
 
 #portfolio-card h3 {
@@ -220,6 +244,7 @@ section:target {
   transform: scale(1.2);
   -webkit-transition: transform 0.5s ease-in-out;
 }
+
 #portfolio-card {
   display: flex;
   flex-wrap: wrap;
