@@ -270,10 +270,14 @@ header nav a:hover {
   color: black;
 }
 
-.About-Me, .Portfolio, .Links, .Contact-Me {
+#about-me-content, #portfolio-content, #links-content, #contact-me-content {
   display: none;
 }
 
-.About-Me:target, .Portfolio:target, .Links:target, .Contact-Me:target {
+#about-me-content:target, #portfolio-content:target, #links-content:target, #contact-me-content:target {
   display: block;
 }
+
+
+
+
