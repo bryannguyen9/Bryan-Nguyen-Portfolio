@@ -130,11 +130,11 @@ header nav a:hover {
 Here we see the header links on the landing page and how when click they lead 
 to the corresponding pages within the site.
 
-![live site navigation bar screenshot](.\Assets\images\navbarlinkexample.png)
+[live site navigation bar screenshot](./Assets/images/navbarlinkexample.png)
 
 Here we see that when hovered over within the portfolio page, my past project images will zoom in to focus on them. You can also click them to get to my live sites!
 
-![live site portfolio zoom screenshot](.\Assets\images\portfoliozoomex.png)
+[live site portfolio zoom screenshot](./Assets/images/portfoliozoomex.png)
 
 
 ## Learning Points 
