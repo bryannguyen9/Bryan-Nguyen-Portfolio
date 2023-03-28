@@ -8,6 +8,7 @@ body {
   background-color: whitesmoke;
 }
 
+/* header and footer section that positions and gives linear gradient*/
 header,
 footer {
   width: 100%;
@@ -83,6 +84,7 @@ header nav ul li {
   margin-left: 25px;
 }
 
+/*gave padding and borders to nav bar buttons*/
 header li a {
   color: rgb(165, 165, 165);
   text-decoration: none;
@@ -103,7 +105,7 @@ section:target {
 }
 
 
-
+/*about me content*/
 #about-me-content {
   color: black;
   display: flex;
@@ -145,6 +147,7 @@ section:target {
   
 }
 
+/*links page and contents*/
 #links-content {
   color: black;
 }
@@ -169,6 +172,7 @@ section:target {
   margin-left: 40%;  
 }
 
+/*allows for card to zoom in on focus*/
 .links:hover {
   transform: scale(1.2);
   -webkit-transition: transform 0.5s ease-in-out;
@@ -205,6 +209,7 @@ section:target {
   
 }
 
+/*portfolio content page styling */
 #portfolio-content {
   color: black;
   display:flex;
@@ -236,6 +241,7 @@ section:target {
   flex: 1;
 }
 
+/*allows for portfolio cards to zoom in when hovered*/
 .portfolio:hover {
   transform: scale(1.2);
   -webkit-transition: transform 0.5s ease-in-out;
@@ -269,6 +275,7 @@ section:target {
   margin: 0;
 }
 
+/*contact me content page*/
 #contact-me-content {
   color: black;
 }
@@ -309,6 +316,7 @@ header nav a:hover {
   color: black;
 }
 
+/*allows for different pages to be toggled through and be a none display when not toggled*/
 #about-me-content, #portfolio-content, #links-content, #contact-me-content {
   display: none;
 }
@@ -317,6 +325,7 @@ header nav a:hover {
   display: block;
 }
 
+/*allows navigation bar to switch into column flex when screen minimized*/
 .asideMain {
     visibility: visible;
 }
@@ -329,7 +338,7 @@ header nav a:hover {
 
 }
 
-/*TO DO FLEX PROPERTIES*/
+/*flex properties and changes to nav bar to show/not show when screen is minimized*/
 @media screen and (max-width: 1500px) {
   .asideMain {
     visibility: hidden;
