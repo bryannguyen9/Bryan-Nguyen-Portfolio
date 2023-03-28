@@ -34,6 +34,8 @@ Again here is a link to my fully deployed website:
 
 ## Code Example
 
+Here is an example code within my index.html that shows how I created my portfolio page within a portfolio-card and how I implemented a link within the actual image so users can click on the image when wanted to view my live site.
+
 ```html
 <section id="portfolio-content" >
       
@@ -53,7 +55,8 @@ Again here is a link to my fully deployed website:
           </figure>
 ```
 
-Here is an example code within my index.html that shows how I created my portfolio page within a portfolio-card and how I implemented a link within the actual image so users can click on the image when wanted to view my live site.
+
+Here is my style.css for how I configured my portfolio page and the cards to zoom in when hovered over as well as being within the flex property to allow minimization when the screen is shrunk.
 
 ```css
 .portfolio {
@@ -82,7 +85,7 @@ Here is an example code within my index.html that shows how I created my portfol
 }
 ```
 
-Here is my style.css for how I configured my portfolio page and the cards to zoom in when hovered over as well as being within the flex property to allow minimization when the screen is shrunk.
+Here is an example of my navigation links that allow users to click in between the buttons within the navigation bar and see the different pages within my site.
 
 ```html
 <header>
@@ -105,7 +108,7 @@ Here is my style.css for how I configured my portfolio page and the cards to zoo
           </ul>
 ```
 
-Here is an example of my navigation links that allow users to click in between the buttons within the navigation bar and see the different pages within my site.
+This is the corresponding style.css that allows the user to toggle between different pages. Here I used the mechanic of display none and display block to show a certain page when a user clicks on the navbar link and nothing else.
 
 ```css
 header nav a:hover {
@@ -122,19 +125,16 @@ header nav a:hover {
 }
 ```
 
-This is the corresponding style.css that allows the user to toggle between different pages. Here I used the mechanic of display none and display block to show a certain page when a user clicks on the navbar link and nothing else.
-
-
 ## Usage 
 
 Here we see the header links on the landing page and how when click they lead 
 to the corresponding pages within the site.
 
-![live site navigation bar screenshot](./assets/navbarlinkexample.png)
+![live site navigation bar screenshot](./assets/images/navbarlinkexample.png)
 
 Here we see that when hovered over within the portfolio page, my past project images will zoom in to focus on them. You can also click them to get to my live sites!
 
-![live site portfolio zoom screenshot](./assets/portfoliozoomex.png)
+![live site portfolio zoom screenshot](./assets/images/portfoliozoomex.png)
 
 
 ## Learning Points 
@@ -170,14 +170,17 @@ on getting into the space with projects that support both my growth, belief, and
 ## Credits
 
 # Special thanks to David Chung: 
- His Github Portfolio: [David-Chung-Github](https://github.com/dchung13/)
- His Linked-In: [David-Chung-LinkedIn](https://www.linkedin.com/in/david-chung-77141526b/)
- His Portfolio Site: [David-Chung-Portfolio](https://dchung13.github.io/David-Chung-Portfolio/) 
+ 
+ * His Github Portfolio: [David-Chung-Github](https://github.com/dchung13/)
+ * His Linked-In: [David-Chung-LinkedIn](https://www.linkedin.com/in/david-chung-77141526b/)
+ * His Portfolio Site: [David-Chung-Portfolio](https://dchung13.github.io/David-Chung-Portfolio/) 
 
 # Special thanks to these reference websites that taught me different functionalities within my website for me to create a seamless experience for users.
 
 1. [W3 Schools](https://www.w3schools.com/cssref/css3_pr_flex.php)
 2. [W3 Schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
+
+
 ## License
 
 MIT License
