@@ -1,103 +1,203 @@
-# 02 Advanced CSS: Portfolio
-
-## Your Task
-
-Welcome to this week's challenge! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
-
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies. 
-
-With these points in mind, in this challenge you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you will use during your job search. It’s a win-win that you'll likely be grateful for in the future!
-
-**Note:** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
-
-Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first challenge, we follow the AS AN / I WANT / SO THAT format. 
+# My Portfolio Landing Page Website
 
 
-## User Story
+## Technology Used 
 
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | 
+| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
+| Git | [https://git-scm.com/](https://git-scm.com/)     | 
+
+
+## Description 
+
+[Visit the deployed site](https://bryannguyen9.github.io/Bryan-Nguyen-Portfolio/)
+
+This project was started with the goal in mind to create a page that all could visit in order to learn  more about me, contact me, and see some of my previous work. 
+
+It offers a cohesive website that allows users to switch in between navigation bar links and find about both how to contact me, a brief description of who I am, and a portfolio page that shows my past work with clickable images so they can navigate to live sites for those respective projects.
+
+Again here is a link to my fully deployed website: 
+[Portfolio Site Home](https://bryannguyen9.github.io/Bryan-Nguyen-Portfolio/)
+
+
+## Table of Contents
+
+* [Code Example](#code-example)
+* [Usage](#usage)
+* [Learning Points](#learning-points)
+* [Author Info](#author-info)
+* [Credits](#credits)
+* [License](#license)
+
+
+## Code Example
+
+```html
+<section id="portfolio-content" >
+      
+        <h2>portfolio</h2>
+          <figure class = "portfolio" id="portfolio-card">          
+                <h3> Horiseon Landing Page</h3>
+                  <p> 
+                    This is one of my first projects where I refactored code in order <br>
+                    to make the website compliant with current accessibility terms and <br>
+                    conditions. I cleaned up code behind the scenes and added semantic <br>
+                    HTML elements in order to make the overall website more accessible. <br>
+                  
+                  </p>
+                <figure class="flex-img">
+                  <a href="https://bryannguyen9.github.io/3-20-23-challenge/"><img src="./Assets/images/horiseonproject1.png" alt="Screenshot of my most recent projects"/></a>
+                </figure>
+          </figure>
 ```
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+
+Here is an example code within my index.html that shows how I created my portfolio page within a portfolio-card and how I implemented a link within the actual image so users can click on the image when wanted to view my live site.
+
+```css
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.portfolio:hover {
+  transform: scale(1.2);
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
+#portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 30%;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 50%;  
+}
 ```
 
+Here is my style.css for how I configured my portfolio page and the cards to zoom in when hovered over as well as being within the flex property to allow minimization when the screen is shrunk.
 
-## Acceptance Criteria
-
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
-
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-
-[//] # "TO DO:"
-ADD DEFAULT PAGE
-ADD TO PORTFOLIO
-MAIN PORTFOLIO IMAGE LARGER AND WHEN CLICKED ON EACH INDIVIDUAL PICTURE SENDS TO LIVE PORTFOLIO LINK
-FLEX TO FIT DIFFERENT SCREEN SIZES AND DEVICES
-
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+```html
+<header>
+      <img src="./Assets/images/myicon.png" alt="Company Icon" />
+      <h1>Bryan Nguyen Portfolio Site</h1>
+        <nav>
+          <ul class = "asideMain">
+              <li>  
+                  <a href="#about-me-content">about me</a>
+              </li>
+              <li>
+                  <a href="#links-content">links</a>
+              </li>
+              <li>
+                  <a href="#portfolio-content">portfolio</a>
+              </li>
+              <li>
+                  <a href="#contact-me-content">contact me</a>
+              </li>
+          </ul>
 ```
 
+Here is an example of my navigation links that allow users to click in between the buttons within the navigation bar and see the different pages within my site.
 
-## Mock-Up
+```css
+header nav a:hover {
+  background-color: lightgray;
+  color: black;
+}
 
-The following animation shows the web application's appearance and functionality:
+#about-me-content, #portfolio-content, #links-content, #contact-me-content {
+  display: none;
+}
 
-![portfolio demo](./Assets/02-advanced-css-challenge-demo.gif)
+#about-me-content:target, #portfolio-content:target, #links-content:target, #contact-me-content:target {
+  display: block;
+}
+```
+
+This is the corresponding style.css that allows the user to toggle between different pages. Here I used the mechanic of display none and display block to show a certain page when a user clicks on the navbar link and nothing else.
 
 
-## Grading Requirements
+## Usage 
 
-This challenge is graded based on the following criteria: 
+Here we see the header links on the landing page and how when click they lead 
+to the corresponding pages within the site.
 
-### Technical Acceptance Criteria: 40%
+![live site navigation bar screenshot](./assets/navbarlinkexample.png)
 
-* Satisfies all of the above acceptance criteria.
+Here we see that when hovered over within the portfolio page, my past project images will zoom in to focus on them. You can also click them to get to my live sites!
 
-### Deployment: 32%
+![live site portfolio zoom screenshot](./assets/portfoliozoomex.png)
 
-* Application deployed at live URL.
 
-* Application loads with no errors.
+## Learning Points 
 
-* Application GitHub URL submitted.
+There was a lot of research done with regards to different aspects within this portfolio site.
 
-* GitHub repository contains application code.
+Some major points were:
 
-### Application Quality: 15%
+* switching in between navigation bar links so that each page would show and no other pages would show
 
-* Application resembles the mock-up functionality provided in the challenge instructions.
+* allowing zoom abilities for portfolio images when hovered over
 
-### Repository Quality: 13%
+* flex properties and how to properly flex wrap all the different properties within my website so that when the screen is minimized users are able to see the same website but still have the same functionality as if it were the normal size.
 
-* Repository has a unique name.
+These are some of the links I used to teach me these main points:
+1. [W3 Schools](https://www.w3schools.com/cssref/css3_pr_flex.php)
+2. [W3 Schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
 
-* Repository follows best practices for file structure and naming conventions.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+## About Me
 
-* Repository contains multiple descriptive commit messages.
+Hi, my name is Bryan Nguyen I am an up and coming full-stack web developer working
+on getting into the space with projects that support both my growth, belief, and imagination. I hope to one day work within the realm of AI, web-development, and even site-reliability/the space of cyber-security.
 
-* Repository contains quality readme with description, screenshot, link to deployed application.
 
-## Review
+### My links
 
-You are required to submit BOTH of the following for review:
+* [Portfolio](https://bryannguyen9.github.io/Bryan-Nguyen-Portfolio/)
+* [LinkedIn](https://linkedin.com/in/bryannguyen9)
+* [Github](https://github.com/bryannguyen9)
 
-* The URL of the deployed application.
 
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+## Credits
 
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+# Special thanks to David Chung: 
+ His Github Portfolio: [David-Chung-Github](https://github.com/dchung13/)
+ His Linked-In: [David-Chung-LinkedIn](https://www.linkedin.com/in/david-chung-77141526b/)
+ His Portfolio Site: [David-Chung-Portfolio](https://dchung13.github.io/David-Chung-Portfolio/) 
+
+# Special thanks to these reference websites that taught me different functionalities within my website for me to create a seamless experience for users.
+
+1. [W3 Schools](https://www.w3schools.com/cssref/css3_pr_flex.php)
+2. [W3 Schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
+## License
+
+MIT License
+
+Copyright (c) [2023] [Bryan-Nguyen]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
